@@ -1,4 +1,4 @@
-# sqlchallenge
+# Sqlchallenge
 
 **Pewlett Hackard Employee Database Analysis**
 This project involved designing and implementing a relational database system to analyze historical employee data from Pewlett Hackard, focusing on employees from the 1980s and 1990s. The tasks encompassed data modeling, data engineering, and data analysis, enabling a structured approach to transform raw CSV files into actionable insights.
