@@ -1,34 +1,62 @@
 # sqlchallenge
-# Instructions
-This Challenge is divided into three parts: data modeling, data engineering, and data analysis.
 
-# Data Modeling
-Inspect the CSV files, and then sketch an Entity Relationship Diagram of the tables. To create the sketch, feel free to use a tool like QuickDBDLinks to an external site..
+**Pewlett Hackard Employee Database Analysis**
+This project involved designing and implementing a relational database system to analyze historical employee data from Pewlett Hackard, focusing on employees from the 1980s and 1990s. The tasks encompassed data modeling, data engineering, and data analysis, enabling a structured approach to transform raw CSV files into actionable insights.
 
-# Data Engineering
-Use the provided information to create a table schema for each of the six CSV files. Be sure to do the following:
+**Deliverables**
+**1. Data Modeling**
+**Entity-Relationship Diagram (ERD):**
+An ERD was developed to define relationships between six datasets, ensuring clarity on primary keys, foreign keys, and table interdependencies.
+Tables included entities such as employees, departments, titles, salaries, and department managers, with relationships linking employees to their departments and roles.
+**2. Data Engineering**
+**Schema Design:**
 
-Remember to specify the data types, primary keys, foreign keys, and other constraints.
+Defined table schemas for each dataset with appropriate data types, constraints, and relationships:
+Primary keys ensured uniqueness in entities like employee ID and department ID.
+Foreign keys established relationships between employees, departments, and job roles.
+Composite keys were created where necessary, such as linking titles to employees with validity dates.
+Constraints such as NOT NULL were applied to mandatory columns, ensuring data integrity.
+**Data Import:**
 
-For the primary keys, verify that the column is unique. Otherwise, create a composite keyLinks to an external site., which takes two primary keys to uniquely identify a row.
+Loaded all six CSV files into the SQL database, ensuring accurate mapping and adherence to the schema.
+Established correct table creation order to maintain foreign key integrity.
 
-Be sure to create the tables in the correct order to handle the foreign keys.
+**3. Data Analysis**
+Utilized SQL queries to extract meaningful insights from the employee database:
 
-Import each CSV file into its corresponding SQL table.
+**Employee Details:**
 
-# Data Analysis
-List the employee number, last name, first name, sex, and salary of each employee.
+Listed employee numbers, names, sex, and salaries, offering a comprehensive view of individual records.
+Hire Trends:
 
-List the first name, last name, and hire date for the employees who were hired in 1986.
+Identified employees hired in 1986, revealing hiring patterns during a specific year.
+Department Management:
 
-List the manager of each department along with their department number, department name, employee number, last name, and first name.
+Provided details on department managers, including their department number, name, and employee information.
+Employee Department Allocation:
 
-List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
+Displayed department numbers and names alongside employee details for each assigned department.
 
-List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
+**Targeted Searches:**
 
-List each employee in the Sales department, including their employee number, last name, and first name.
+Identified employees named "Hercules" with last names starting with "B".
+Listed employees in specific departments like Sales and Development, offering insights into department composition.
 
-List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
+**Name Frequency Analysis:**
 
-List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
+Counted and ranked employee last names by frequency, uncovering patterns in surname distributions.
+Key Insights and Trends
+
+**Departmental Allocation:**
+
+The Sales and Development departments had the highest employee counts, reflecting their significance within the company.
+Name Frequency:
+
+Certain last names were more common, suggesting potential familial or regional hiring patterns.
+
+**Managerial Roles:**
+
+Analysis of department managers provided insights into leadership tenure and departmental structure during the 1980s and 1990s.
+
+**Conclusion**
+The project successfully transformed raw employee data into a structured SQL database, enabling detailed analysis of historical hiring patterns, departmental composition, and employee demographics. This foundational database can now serve as a resource for deeper exploration of historical trends and strategic planning.
