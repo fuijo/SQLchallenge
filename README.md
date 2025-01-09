@@ -4,10 +4,12 @@
 This project involved designing and implementing a relational database system to analyze historical employee data from Pewlett Hackard, focusing on employees from the 1980s and 1990s. The tasks encompassed data modeling, data engineering, and data analysis, enabling a structured approach to transform raw CSV files into actionable insights.
 
 **Deliverables**
+
 **1. Data Modeling**
 **Entity-Relationship Diagram (ERD):**
 An ERD was developed to define relationships between six datasets, ensuring clarity on primary keys, foreign keys, and table interdependencies.
 Tables included entities such as employees, departments, titles, salaries, and department managers, with relationships linking employees to their departments and roles.
+
 **2. Data Engineering**
 **Schema Design:**
 
@@ -16,6 +18,7 @@ Primary keys ensured uniqueness in entities like employee ID and department ID.
 Foreign keys established relationships between employees, departments, and job roles.
 Composite keys were created where necessary, such as linking titles to employees with validity dates.
 Constraints such as NOT NULL were applied to mandatory columns, ensuring data integrity.
+
 **Data Import:**
 
 Loaded all six CSV files into the SQL database, ensuring accurate mapping and adherence to the schema.
